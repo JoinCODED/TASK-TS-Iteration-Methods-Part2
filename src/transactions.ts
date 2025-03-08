@@ -52,8 +52,8 @@ function calculateTotalIncome(transactions: Transaction[]): number {
 // calculateTotalExpenses(transactions); // => 800  (500 + 300)
 function calculateTotalExpenses(transactions: Transaction[]): number {
   // write your code here...
-  const filteredIncome = filterExpenseTransactions(transactions);
-  return filteredIncome.reduce((sum, array) => sum + array[1], 0); // replace -1 with what you see is fit
+  const filteredExpense = filterExpenseTransactions(transactions);
+  return filteredExpense.reduce((sum, array) => sum + array[1], 0); // replace -1 with what you see is fit
 }
 
 // `calculateNetTotal` function that:
